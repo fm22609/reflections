@@ -3,3 +3,21 @@ A .git folder is created in the current working directory. It is needed for git 
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 Working directory is where you keep all the files. Repository is a snapshot of version that you commit. Staging area is the intermediate between working directory and repository. You can choose what changes and what to commit to add into staging area. 
+
+How can you use the staging area to make sure you have one commit per logical change?
+git diff
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches will help when there are experimental or different versions that the developer want to try out without affecting the main version.
+
+How do the diagrams help you visualize the branch structure?
+It makes it clearer and easier to see which branch is related to which commits. The reachability is easier to see.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+All the changes done is being merge. 
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+Pros:
+- it will save a lot of work to compare the work between different commits on different branch
+Cons:
+- the code that are conflicting will needs some time to inspect and fix.
